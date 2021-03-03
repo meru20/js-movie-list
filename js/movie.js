@@ -25,37 +25,33 @@ let movieDescription =  movieList.find(movie => movie. id === movieId).descrpion
 /*************3. Create new movie object and push it */
 
 
-let createMovie = {
-  id: 5,
-  title:'The Intouchables',
-  year: 2011, genre:'Biography',
-  descrpion:'After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.', imdbRating:8.5, width: 10,
-  height: 10,
-  img: (function() {
-    var img = new Image();
-    img.src = "http://i.stack.imgur.com/KUvWS.jpg";
-    return img;
-  })()
 
+const addMovie = (id, title,year,genre,description,imdbRating) => {
+  let newMovie ={
+    id: id,
+    title: title,
+    year: year,
+    genre: genre,
+    description: description,
+    imdbRating: imdbRating,
 
-}
+  }
 
-const addMovie = movieObject => {
-  movieList.push(movieObject)
+  movieList.push(newMovie);
   console.log('You have added one movie', movieList);
 }
-addMovie(createMovie);
+addMovie(5,'The Intouchables',2011 , 'Biography', 'After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.',8.5) ;
 
 
 
 /*************4. remove an object based on its attribute */
-const removeMovie = movieId => {
-  const deleteMovie = movieList.map(item => {
-      return (item.id)
-   }).indexOf(movieId)
-   movieList.splice(deleteMovie,1)
-   console.log('You have deleted one movie', movieList);
+
+const removeMovie = movieName => {
+  movieList = movieList.filter((movie) => {
+    return movie.title !== movieName
+  })
+  console.log('You have deleted one movie', movieList);
+
+
   }
-removeMovie(4);
-
-
+removeMovie('Inception');
