@@ -1,0 +1,17 @@
+
+.btn-styles {
+  display:flex;
+  justify-content:space-between;
+  /* flex-direction: column; */
+  /* justify-content: flex-end; */
+  /* align-items: center; */
+  
+ }
+
+ img{
+  max-height: 150px;
+max-width: 200px;
+width: 120px;
+height: 150px;
+ }
+
