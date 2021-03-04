@@ -54,7 +54,7 @@ if(findMovie) {
     console.log ('Movie not found :(')
  }
 }
-  detailMovie('The Avengers');
+  //detailMovie('The Avengers');
 
 /*************3. Create new movie object and push it */
 
