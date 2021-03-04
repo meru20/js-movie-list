@@ -2,18 +2,18 @@
 .btn-styles {
   display:flex;
   justify-content:space-between;
-  
-  
+
+
  }
  h1{
   font-family:  cursive;
-  color: white;   
+  color: white;
  }
 
  h4,strong{
   font-family:  cursive;
   font-size: 1rem;
-  color: rgb(17, 17, 17);   
+  color: rgb(17, 17, 17);
  }
 
  img{
@@ -30,4 +30,4 @@
   padding-right: 50px;
   padding-left: 50px; */
 
-  /* }   */ 
+  /* }   */
