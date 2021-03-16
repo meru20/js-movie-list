@@ -51,7 +51,7 @@ if(findMovie) {
   alert(`${findMovie.title}:  ${findMovie.description}`);
 }
   else {
-    console.log ('Movie not found :(')
+    alert ('Movie not found :(')
  }
 }
   //detailMovie('The Avengers');
